@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Podsumowanie</title>
+    <meta charset="utf-8"/>
+    <link href="../public/style/style.css" rel="stylesheet" type="text/css">
+    <link href="../public/style/addUser.css" rel="stylesheet" type="text/css">
+    <link href="../public/style/table.css" rel="stylesheet" type="text/css">
+    <link href="../public/style/summary.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
+</head>
+<body>
+
+<div id="container">
+
+    <div class="form-group">
+
+        <table class="twidth">
+            {{range .Summary}}
+            <thead>
+            <tr>
+                <td>{{.Month}}</td>
+                <td>Suma: {{.MonthSum}}</td>
+            </tr>
+
+            </thead>
+            <tbody>
+            {{range .CatSum}}
+
+            <tr>
+                <td>{{.Name}}</td>
+                <td>{{.Sum}}</td>
+            </tr>
+
+
+            {{end}}
+            </tbody>
+
+            {{end}}
+
+        </table>
+
+
+    </div>
+
+    <nav class="sidebarContainer">
+
+        <ul class="sidebar">
+            <div class="profile">
+                <div class="ico"></div>
+                <div class="profileName"><p>{{.UserName}}</p></div>
+                <div class="clearfix"></div>
+            </div>
+
+            <li><a href="/">Start</a></li>
+
+            <li><a href="/new/expense">Wydatki</a></li>
+            <li><a href="/new/category">Kategoria</a></li>
+            <li><a href="/summary">Podsumowanie</a></li>
+            <li><a href="/user/logout">Wyloguj się</a></li>
+
+        </ul>
+
+    </nav>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+
+th, td {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+
+    
+}
+
+
+
+tbody > tr:nth-child(odd) {
+    background: #e5e5e5}
+
+thead >tr{
+    background: #4CAF50;
+    color: #f7f7f7;
+}
+
+table{
+    border-collapse: collapse;
+    
+    
+ 
+    
+}
+.twidth{
+   width: 938px; 
+   margin: 5px auto;
+
+}
+
+#container{
+
+    width: 1000px;
+}
+
+
+
+
+
+table, td, th {
+    border: 1px solid #b1b1b1;
+}
+
